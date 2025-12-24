@@ -1,0 +1,64 @@
+{
+  "consultorios": [
+    {
+      "id": "1",
+      "nombre": "Consultorio A",
+      "sala": "101",
+      "especialidad": "Cardiología"
+    },
+    {
+      "id": "2",
+      "nombre": "Consultorio B",
+      "sala": "102",
+      "especialidad": "Pediatría"
+    },
+    {
+      "id": "3",
+      "nombre": "Consultorio C",
+      "sala": "201",
+      "especialidad": "Traumatología"
+    },
+    {
+      "id": "4",
+      "nombre": "Consultorio D",
+      "sala": "202",
+      "especialidad": "Dermatología"
+    },
+    {
+      "id": "5",
+      "nombre": "Consultorio E",
+      "sala": "203",
+      "especialidad": "Neurología"
+    },
+    {
+      "id": "6",
+      "nombre": "Consultorio F",
+      "sala": "301",
+      "especialidad": "Oftalmología"
+    },
+    {
+      "id": "7",
+      "nombre": "Consultorio G",
+      "sala": "302",
+      "especialidad": "Ginecología"
+    },
+    {
+      "id": "8",
+      "nombre": "Consultorio H",
+      "sala": "303",
+      "especialidad": "Psiquiatría"
+    },
+    {
+      "id": "9",
+      "nombre": "Consultorio I",
+      "sala": "401",
+      "especialidad": "Endocrinología"
+    },
+    {
+      "id": "10",
+      "nombre": "Consultorio J",
+      "sala": "402",
+      "especialidad": "Gastroenterología"
+    }
+  ]
+}

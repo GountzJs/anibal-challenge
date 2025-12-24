@@ -1,5 +1,5 @@
 import type { AuthEntity } from '../entities/auth.entity'
 
 export interface AuthRepository {
-  signIn(email: string, password: string): Promise<AuthEntity>
+  signIn(matricula: string, pin: number): Promise<AuthEntity>
 }

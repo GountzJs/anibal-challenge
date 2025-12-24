@@ -1,30 +1,33 @@
 export class SignInBodyValidation {
-  email: string;
-  password: string;
+  matricula: string
+  pin: string
 
-  constructor(email: string, password: string) {
-    this.email = email;
-    this.password = password;
+  constructor(matricula: string, pin: string) {
+    this.matricula = matricula
+    this.pin = pin
   }
 
   validate(): string[] {
-    const errors: string[] = [];
+    const errors: string[] = []
 
-    if (!this.email) {
-      errors.push('El correo es obligatorio');
+    if (!this.matricula) {
+      errors.push('La matrícula es obligatoria')
     }
-    if (!/^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/.test(this.email)) {
-      errors.push('Correo inválido');
+    if (this.matricula.length !== 8) {
+      errors.push('La matrícula debe tener 8 caracteres')
     }
-    if (!this.password) {
-      errors.push('La contraseña es obligatoria');
+    if (!/^[a-zA-Z]\d$/.test(this.matricula)) {
+      errors.push('Matrícula inválida solo carácteres alfanuméricos')
     }
-    if (this.password.length < 8) {
-      errors.push('La contraseña debe tener al menos 8 carácteres');
+    if (!this.pin) {
+      errors.push('El PIN es obligatorio')
     }
-    if (this.password.length > 16) {
-      errors.push('La contraseña debe tener menos de 16 carácteres');
+    if (!/^\d+$/.test(this.pin)) {
+      errors.push('El PIN debe contener solo números')
     }
-    return errors;
+    if (this.pin.length !== 6) {
+      errors.push('El PIN debe tener 6 dígitos')
+    }
+    return errors
   }
 }

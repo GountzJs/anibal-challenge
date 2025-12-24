@@ -10,19 +10,19 @@ export const handlers = [
     }
 
     const body = req as {
-      email: string
-      password: string
+      matricula: string
+      pin: string
     }
 
-    const errors = new SignInBodyValidation(body.email, body.password).validate()
+    const errors = new SignInBodyValidation(body.matricula, body.pin).validate()
 
     if (errors.length > 0) {
       return HttpResponse.json({ errors }, { status: 400 })
     }
 
-    if (body.email === 'error@correo.com' || body.password === '123456789') {
+    if (body.matricula === 'error' || body.pin === '123456') {
       return HttpResponse.json(
-        { errors: ['El correo o la clave son incorrectos'] },
+        { errors: ['La matrícula o el PIN son incorrectos'] },
         { status: 406 },
       )
     }

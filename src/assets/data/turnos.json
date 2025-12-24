@@ -1,0 +1,474 @@
+{
+  "turnos": {
+    "1": [
+      {
+        "id": "1",
+        "hora": "08:00",
+        "paciente": "Juan Pérez",
+        "dni": "33456789",
+        "obraSocial": "OSDE",
+        "tipoConsulta": "PRIMERA_VEZ",
+        "estado": "CONFIRMADO"
+      },
+      {
+        "id": "2",
+        "hora": "08:30",
+        "paciente": "María López",
+        "dni": "28934567",
+        "obraSocial": "Swiss Medical",
+        "tipoConsulta": "CONTROL",
+        "estado": "EN_ATENCION"
+      },
+      {
+        "id": "3",
+        "hora": "09:00",
+        "paciente": "Carlos Gómez",
+        "dni": "35678912",
+        "obraSocial": "Galeno",
+        "tipoConsulta": "URGENCIA",
+        "estado": "CONFIRMADO"
+      },
+      {
+        "id": "4",
+        "hora": "09:30",
+        "paciente": "Laura Rodríguez",
+        "dni": "42891234",
+        "obraSocial": "Medifé",
+        "tipoConsulta": "CONTROL",
+        "estado": "AUSENTE"
+      },
+      {
+        "id": "5",
+        "hora": "10:00",
+        "paciente": "Roberto Martínez",
+        "dni": "31567890",
+        "obraSocial": "OSDE",
+        "tipoConsulta": "PRIMERA_VEZ",
+        "estado": "FINALIZADO"
+      }
+    ],
+    "2": [
+      {
+        "id": "6",
+        "hora": "08:30",
+        "paciente": "Ana García",
+        "dni": "39234567",
+        "obraSocial": "Swiss Medical",
+        "tipoConsulta": "CONTROL",
+        "estado": "CONFIRMADO"
+      },
+      {
+        "id": "7",
+        "hora": "09:00",
+        "paciente": "Pedro Fernández",
+        "dni": "27456123",
+        "obraSocial": "OSDE",
+        "tipoConsulta": "PRIMERA_VEZ",
+        "estado": "CONFIRMADO"
+      },
+      {
+        "id": "8",
+        "hora": "09:30",
+        "paciente": "Sofía Álvarez",
+        "dni": "44678901",
+        "obraSocial": "Galeno",
+        "tipoConsulta": "URGENCIA",
+        "estado": "EN_ATENCION"
+      },
+      {
+        "id": "9",
+        "hora": "10:00",
+        "paciente": "Diego Ramírez",
+        "dni": "32890145",
+        "obraSocial": "Medifé",
+        "tipoConsulta": "CONTROL",
+        "estado": "FINALIZADO"
+      },
+      {
+        "id": "10",
+        "hora": "10:30",
+        "paciente": "Valentina Castro",
+        "dni": "38456789",
+        "obraSocial": "OSDE",
+        "tipoConsulta": "PRIMERA_VEZ",
+        "estado": "AUSENTE"
+      }
+    ],
+    "3": [
+      {
+        "id": "11",
+        "hora": "09:00",
+        "paciente": "María González",
+        "dni": "35678912",
+        "obraSocial": "OSDE",
+        "tipoConsulta": "PRIMERA_VEZ",
+        "estado": "CONFIRMADO"
+      },
+      {
+        "id": "12",
+        "hora": "09:30",
+        "paciente": "Carlos Fernández",
+        "dni": "28456123",
+        "obraSocial": "Swiss Medical",
+        "tipoConsulta": "URGENCIA",
+        "estado": "EN_ATENCION"
+      },
+      {
+        "id": "13",
+        "hora": "10:00",
+        "paciente": "Laura Martínez",
+        "dni": "42891567",
+        "obraSocial": "Galeno",
+        "tipoConsulta": "CONTROL",
+        "estado": "CONFIRMADO"
+      },
+      {
+        "id": "14",
+        "hora": "10:30",
+        "paciente": "Roberto Díaz",
+        "dni": "31245789",
+        "obraSocial": "Medifé",
+        "tipoConsulta": "CONTROL",
+        "estado": "AUSENTE"
+      },
+      {
+        "id": "15",
+        "hora": "11:00",
+        "paciente": "Ana Silva",
+        "dni": "39567234",
+        "obraSocial": "OSDE",
+        "tipoConsulta": "PRIMERA_VEZ",
+        "estado": "FINALIZADO"
+      }
+    ],
+    "4": [
+      {
+        "id": "16",
+        "hora": "08:00",
+        "paciente": "Martín Torres",
+        "dni": "34789012",
+        "obraSocial": "Swiss Medical",
+        "tipoConsulta": "CONTROL",
+        "estado": "CONFIRMADO"
+      },
+      {
+        "id": "17",
+        "hora": "08:30",
+        "paciente": "Lucía Morales",
+        "dni": "29345678",
+        "obraSocial": "OSDE",
+        "tipoConsulta": "PRIMERA_VEZ",
+        "estado": "FINALIZADO"
+      },
+      {
+        "id": "18",
+        "hora": "09:00",
+        "paciente": "Javier Ruiz",
+        "dni": "36890123",
+        "obraSocial": "Galeno",
+        "tipoConsulta": "URGENCIA",
+        "estado": "EN_ATENCION"
+      },
+      {
+        "id": "19",
+        "hora": "09:30",
+        "paciente": "Carolina Benítez",
+        "dni": "43012345",
+        "obraSocial": "Medifé",
+        "tipoConsulta": "CONTROL",
+        "estado": "CONFIRMADO"
+      },
+      {
+        "id": "20",
+        "hora": "10:00",
+        "paciente": "Fernando Vega",
+        "dni": "30678901",
+        "obraSocial": "OSDE",
+        "tipoConsulta": "PRIMERA_VEZ",
+        "estado": "AUSENTE"
+      }
+    ],
+    "5": [
+      {
+        "id": "21",
+        "hora": "09:30",
+        "paciente": "Gabriela Sosa",
+        "dni": "37901234",
+        "obraSocial": "Swiss Medical",
+        "tipoConsulta": "URGENCIA",
+        "estado": "CONFIRMADO"
+      },
+      {
+        "id": "22",
+        "hora": "10:00",
+        "paciente": "Andrés Medina",
+        "dni": "26234567",
+        "obraSocial": "OSDE",
+        "tipoConsulta": "CONTROL",
+        "estado": "EN_ATENCION"
+      },
+      {
+        "id": "23",
+        "hora": "10:30",
+        "paciente": "Florencia Rojas",
+        "dni": "41456789",
+        "obraSocial": "Galeno",
+        "tipoConsulta": "PRIMERA_VEZ",
+        "estado": "CONFIRMADO"
+      },
+      {
+        "id": "24",
+        "hora": "11:00",
+        "paciente": "Sebastián Ortiz",
+        "dni": "33789012",
+        "obraSocial": "Medifé",
+        "tipoConsulta": "CONTROL",
+        "estado": "FINALIZADO"
+      },
+      {
+        "id": "25",
+        "hora": "11:30",
+        "paciente": "Camila Herrera",
+        "dni": "39012345",
+        "obraSocial": "OSDE",
+        "tipoConsulta": "PRIMERA_VEZ",
+        "estado": "AUSENTE"
+      }
+    ],
+    "6": [
+      {
+        "id": "26",
+        "hora": "08:00",
+        "paciente": "Maximiliano Luna",
+        "dni": "34123456",
+        "obraSocial": "OSDE",
+        "tipoConsulta": "PRIMERA_VEZ",
+        "estado": "CONFIRMADO"
+      },
+      {
+        "id": "27",
+        "hora": "08:30",
+        "paciente": "Romina Paz",
+        "dni": "28567890",
+        "obraSocial": "Swiss Medical",
+        "tipoConsulta": "CONTROL",
+        "estado": "FINALIZADO"
+      },
+      {
+        "id": "28",
+        "hora": "09:00",
+        "paciente": "Nicolás Vargas",
+        "dni": "36234567",
+        "obraSocial": "Galeno",
+        "tipoConsulta": "URGENCIA",
+        "estado": "EN_ATENCION"
+      },
+      {
+        "id": "29",
+        "hora": "09:30",
+        "paciente": "Agustina Navarro",
+        "dni": "42567890",
+        "obraSocial": "Medifé",
+        "tipoConsulta": "CONTROL",
+        "estado": "AUSENTE"
+      },
+      {
+        "id": "30",
+        "hora": "10:00",
+        "paciente": "Ezequiel Molina",
+        "dni": "31890123",
+        "obraSocial": "OSDE",
+        "tipoConsulta": "PRIMERA_VEZ",
+        "estado": "CONFIRMADO"
+      }
+    ],
+    "7": [
+      {
+        "id": "31",
+        "hora": "09:00",
+        "paciente": "Victoria Campos",
+        "dni": "38234567",
+        "obraSocial": "Swiss Medical",
+        "tipoConsulta": "CONTROL",
+        "estado": "CONFIRMADO"
+      },
+      {
+        "id": "32",
+        "hora": "09:30",
+        "paciente": "Facundo Ramos",
+        "dni": "27890123",
+        "obraSocial": "OSDE",
+        "tipoConsulta": "URGENCIA",
+        "estado": "EN_ATENCION"
+      },
+      {
+        "id": "33",
+        "hora": "10:00",
+        "paciente": "Micaela Gutiérrez",
+        "dni": "40123456",
+        "obraSocial": "Galeno",
+        "tipoConsulta": "PRIMERA_VEZ",
+        "estado": "FINALIZADO"
+      },
+      {
+        "id": "34",
+        "hora": "10:30",
+        "paciente": "Tomás Santana",
+        "dni": "32456789",
+        "obraSocial": "Medifé",
+        "tipoConsulta": "CONTROL",
+        "estado": "CONFIRMADO"
+      },
+      {
+        "id": "35",
+        "hora": "11:00",
+        "paciente": "Julieta Ríos",
+        "dni": "37567890",
+        "obraSocial": "OSDE",
+        "tipoConsulta": "PRIMERA_VEZ",
+        "estado": "AUSENTE"
+      }
+    ],
+    "8": [
+      {
+        "id": "36",
+        "hora": "08:30",
+        "paciente": "Matías Blanco",
+        "dni": "35012345",
+        "obraSocial": "OSDE",
+        "tipoConsulta": "PRIMERA_VEZ",
+        "estado": "CONFIRMADO"
+      },
+      {
+        "id": "37",
+        "hora": "09:00",
+        "paciente": "Brenda Paredes",
+        "dni": "29678901",
+        "obraSocial": "Swiss Medical",
+        "tipoConsulta": "CONTROL",
+        "estado": "CONFIRMADO"
+      },
+      {
+        "id": "38",
+        "hora": "09:30",
+        "paciente": "Lucas Méndez",
+        "dni": "37345678",
+        "obraSocial": "Galeno",
+        "tipoConsulta": "URGENCIA",
+        "estado": "EN_ATENCION"
+      },
+      {
+        "id": "39",
+        "hora": "10:00",
+        "paciente": "Paula Acosta",
+        "dni": "43890123",
+        "obraSocial": "Medifé",
+        "tipoConsulta": "CONTROL",
+        "estado": "FINALIZADO"
+      },
+      {
+        "id": "40",
+        "hora": "10:30",
+        "paciente": "Ignacio Cabrera",
+        "dni": "30234567",
+        "obraSocial": "OSDE",
+        "tipoConsulta": "PRIMERA_VEZ",
+        "estado": "AUSENTE"
+      }
+    ],
+    "9": [
+      {
+        "id": "41",
+        "hora": "09:00",
+        "paciente": "Daniela Peralta",
+        "dni": "38901234",
+        "obraSocial": "Swiss Medical",
+        "tipoConsulta": "CONTROL",
+        "estado": "CONFIRMADO"
+      },
+      {
+        "id": "42",
+        "hora": "09:30",
+        "paciente": "Federico Ibáñez",
+        "dni": "26678901",
+        "obraSocial": "OSDE",
+        "tipoConsulta": "URGENCIA",
+        "estado": "EN_ATENCION"
+      },
+      {
+        "id": "43",
+        "hora": "10:00",
+        "paciente": "Aldana Coronel",
+        "dni": "41789012",
+        "obraSocial": "Galeno",
+        "tipoConsulta": "PRIMERA_VEZ",
+        "estado": "FINALIZADO"
+      },
+      {
+        "id": "44",
+        "hora": "10:30",
+        "paciente": "Leandro Suárez",
+        "dni": "33012345",
+        "obraSocial": "Medifé",
+        "tipoConsulta": "CONTROL",
+        "estado": "AUSENTE"
+      },
+      {
+        "id": "45",
+        "hora": "11:00",
+        "paciente": "Celeste Domínguez",
+        "dni": "39890123",
+        "obraSocial": "OSDE",
+        "tipoConsulta": "PRIMERA_VEZ",
+        "estado": "CONFIRMADO"
+      }
+    ],
+    "10": [
+      {
+        "id": "46",
+        "hora": "08:00",
+        "paciente": "Cristian Flores",
+        "dni": "34567890",
+        "obraSocial": "OSDE",
+        "tipoConsulta": "PRIMERA_VEZ",
+        "estado": "CONFIRMADO"
+      },
+      {
+        "id": "47",
+        "hora": "08:30",
+        "paciente": "Natalia Quiroga",
+        "dni": "28012345",
+        "obraSocial": "Swiss Medical",
+        "tipoConsulta": "CONTROL",
+        "estado": "FINALIZADO"
+      },
+      {
+        "id": "48",
+        "hora": "09:00",
+        "paciente": "Gonzalo Ponce",
+        "dni": "36567890",
+        "obraSocial": "Galeno",
+        "tipoConsulta": "URGENCIA",
+        "estado": "EN_ATENCION"
+      },
+      {
+        "id": "49",
+        "hora": "09:30",
+        "paciente": "Yamila Escobar",
+        "dni": "42123456",
+        "obraSocial": "Medifé",
+        "tipoConsulta": "CONTROL",
+        "estado": "CONFIRMADO"
+      },
+      {
+        "id": "50",
+        "hora": "10:00",
+        "paciente": "Rodrigo Vera",
+        "dni": "31234567",
+        "obraSocial": "OSDE",
+        "tipoConsulta": "PRIMERA_VEZ",
+        "estado": "AUSENTE"
+      }
+    ]
+  }
+}
