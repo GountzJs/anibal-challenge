@@ -31,7 +31,7 @@ bun start
 
 ## Enfoque recomendado
 
-Este ejercicio está diseñado para completarse en ~1 hora.
+Este ejercicio está diseñado para dedicarle ~1 hora de código, sin importar su completitud en cuanto a funcionalidades.
 
 **Prioridades:**
 
@@ -39,7 +39,7 @@ Este ejercicio está diseñado para completarse en ~1 hora.
 2. Adherencia a la arquitectura existente
 3. Código limpio y legible
 4. Manejo de errores (baja prioridad)
-5. NO se evaluara: testing, responsive, ui muy personalizada
+5. NO se evaluará: testing, responsive, ui muy personalizada
 
 **Tips:**
 
