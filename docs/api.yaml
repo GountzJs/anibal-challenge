@@ -1,20 +1,20 @@
 openapi: 3.0.0
 info:
-  title: API Banca Argentina
+  title: API MediTurno
   version: 1.0.0
-  description: Endpoints Banca Argentina
+  description: Endpoints MediTurno
 
 servers:
-  - url: http://localhost:8080
+  - url: http://localhost:3000
     description: Servidor local de desarrollo
 
 tags:
   - name: Autenticación
-    description: Endpoints relacionados con la autenticación de usuarios.
-  - name: Empresas
-    description: Endpoints relacionados con la gestión de empresas.
-  - name: Transferencias
-    description: Endpoints relacionados con transferencias.
+    description: Endpoints relacionados con la autenticación de profesionales.
+  - name: Consultorios
+    description: Endpoints relacionados con la gestión de consultorios.
+  - name: Turnos
+    description: Endpoints relacionados con turnos médicos.
 
 components:
   securitySchemes:
@@ -24,12 +24,12 @@ components:
       bearerFormat: JWT
 
 paths:
-  /api/auth/sign-in:
+  /auth/sign-in:
     post:
       tags:
         - Autenticación
       summary: Iniciar sesión
-      description: Permite a un usuario iniciar sesión en el sistema.
+      description: Permite a un profesional de la salud iniciar sesión en el sistema.
       requestBody:
         description: Credenciales necesarias para iniciar sesión.
         required: true
@@ -38,16 +38,21 @@ paths:
             schema:
               type: object
               properties:
-                email:
+                matricula:
                   type: string
-                  format: email
-                  example: usuario@example.com
-                password:
+                  pattern: '^[a-zA-Z0-9]{8}$'
+                  example: MN12345A
+                  description: Matrícula profesional alfanumérica de 8 caracteres
+                pin:
                   type: string
-                  format: password
-                  example: MiContraseña123
+                  pattern: '^[0-9]{6}$'
+                  example: '123456'
+                  description: PIN numérico de 6 dígitos
+              required:
+                - matricula
+                - pin
       responses:
-        "200":
+        '200':
           description: Operación exitosa
           content:
             application/json:
@@ -56,80 +61,145 @@ paths:
                 properties:
                   token:
                     type: string
-                    example: f1ae9924-4f84-44bc-bc3a-3cfc9388e944
+                    example: '1234567890'
+        '400':
+          description: Error de validación
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  errors:
+                    type: array
+                    items:
+                      type: string
+                    example: ['La matrícula debe tener 8 caracteres']
+        '406':
+          description: Credenciales incorrectas
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  errors:
+                    type: array
+                    items:
+                      type: string
+                    example: ['La matrícula o el PIN son incorrectos']
 
-  /api/enterprises:
+  /consultorios:
     get:
       tags:
-        - Empresas
-      summary: Obtener lista de empresas
-      description: Retorna una lista de empresas disponibles.
+        - Consultorios
+      summary: Obtener lista de consultorios
+      description: Retorna una lista de consultorios disponibles para el profesional.
       security:
-        - BearerAuth: [] # Requiere autenticación con token
+        - BearerAuth: []
       responses:
-        "200":
+        '200':
           description: Operación exitosa
           content:
             application/json:
               schema:
                 type: object
                 properties:
-                  enterprises:
+                  consultorios:
                     type: array
                     items:
                       type: object
                       properties:
                         id:
-                          type: integer
-                          example: 1
-                        cuil:
                           type: string
-                          example: "30714919829"
-                        razonSocial:
+                          example: '1'
+                        nombre:
                           type: string
-                          example: "CAMPOS DEL NORTE SRL"
+                          example: 'Consultorio A'
+                        sala:
+                          type: string
+                          example: '101'
+                        especialidad:
+                          type: string
+                          example: 'Cardiología'
+        '401':
+          description: No autorizado
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  error:
+                    type: string
+                    example: 'Unauthorized'
 
-  /api/transferencias:
+  /turnos/{id}:
     get:
       tags:
-        - Transferencias
-      summary: Consultar transferencias
-      description: Obtiene una lista de transferencias realizadas.
+        - Turnos
+      summary: Consultar turnos de un consultorio
+      description: Obtiene la lista de turnos programados para un consultorio específico.
       security:
         - BearerAuth: []
       parameters:
-        - in: header
-          name: CUIT
-          description: CUIT del cliente que realiza la consulta.
+        - in: path
+          name: id
+          description: ID del consultorio
           required: true
           schema:
             type: string
-            example: "30714919829"
+            example: '1'
       responses:
-        "200":
+        '200':
           description: Operación exitosa
           content:
             application/json:
               schema:
                 type: object
                 properties:
-                  transferencias:
+                  turnos:
                     type: array
                     items:
                       type: object
                       properties:
-                        nroTransaccion:
+                        id:
                           type: string
-                          example: "0002"
-                        destinatario:
+                          example: '1'
+                        hora:
                           type: string
-                          example: "TIENDA AGRO LOBERIA INT S.A."
-                        importe:
-                          type: number
-                          example: 100.52
-                        referencia:
+                          example: '09:00'
+                        paciente:
                           type: string
-                          example: "Compra"
+                          example: 'María González'
+                        dni:
+                          type: string
+                          example: '35678912'
+                        obraSocial:
+                          type: string
+                          example: 'OSDE'
+                        tipoConsulta:
+                          type: string
+                          enum: [PRIMERA_VEZ, CONTROL, URGENCIA]
+                          example: 'PRIMERA_VEZ'
                         estado:
                           type: string
-                          example: "AP"
+                          enum: [CONFIRMADO, AUSENTE, EN_ATENCION, FINALIZADO]
+                          example: 'CONFIRMADO'
+        '401':
+          description: No autorizado
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  error:
+                    type: string
+                    example: 'Unauthorized'
+        '404':
+          description: Consultorio no encontrado
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  error:
+                    type: string
+                    example: 'El consultorio solicitado no se encuentra registrado'
