@@ -5,10 +5,10 @@
 }
 
 html {
+  color-scheme: light;
   scroll-behavior: smooth;
   scrollbar-gutter: stable;
   font-family: 'Poppins', sans-serif;
-  color-scheme: dark;
   height: 100%;
   width: 100%;
 }
