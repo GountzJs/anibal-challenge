@@ -128,9 +128,11 @@ El objetivo es crear una página de ingreso, una selección del consultorio méd
 
 [Documentación Api](./docs/api.yaml)
 
+[Figma Design](https://www.figma.com/design/hfb1PhMREldGCJMBPiJq5b/MediTurno?node-id=10-16&t=k22PVl9DpZ6sYK2X-1)
+
 #### LOGIN - Pantalla Principal
 
-[Prototipo](./docs/pantalla-login.jpeg)
+[Prototipo](./docs/login.png)
 
 Ruta: /
 
@@ -157,7 +159,7 @@ Ruta: /
 
 #### SELECCIONAR CONSULTORIO:
 
-[Prototipo](./docs/pantalla-seleccionar-empresa.jpeg)
+[Prototipo](./docs/consultorios.png)
 
 Ruta: /seleccionar-consultorio
 
@@ -179,7 +181,7 @@ Ruta: /seleccionar-consultorio
 
 #### LISTADO DE TURNOS
 
-[Prototipo](./docs/pantalla-turnos.jpeg)
+[Prototipo](./docs/turnos.png)
 
 Ruta: /turnos
 
